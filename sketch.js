@@ -13,8 +13,8 @@ function preload() {
 function setup(){
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
-    world = engine.world;
-
+    world = engine.worl;
+    plataform= new Ground(150,300,300,150)
     
     ground = new Ground(600,height,1200,20)
 
@@ -47,9 +47,10 @@ function draw(){
     box2.display();
     ground.display();
     pig1.display();
-    log1.display();
-
-    box3.display();
+    log1.display()
+     
+box3.display();
+    
     box4.display();
     pig3.display();
     log3.display();
@@ -57,6 +58,6 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
-
+        polataform.displa();
     bird.display();
 }
